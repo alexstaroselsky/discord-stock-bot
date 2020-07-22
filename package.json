@@ -1,0 +1,35 @@
+{
+  "name": "discord-stock-bot",
+  "version": "1.0.0",
+  "description": "Discord Bot for displaying stock market information",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexstaroselsky/discord-stock-bot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "finance",
+    "node"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexstaroselsky/discord-stock-bot/issues"
+  },
+  "homepage": "https://github.com/alexstaroselsky/discord-stock-bot#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier-eslint": "^11.0.0"
+  }
+}
