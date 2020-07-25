@@ -26,3 +26,9 @@ npm run dev
 ```
 
 Or run the "Debug Application" VS Code launch configuration. Note that this depends on [nodemon](https://nodemon.io/) installed globally.
+
+Run tests:
+
+```shell
+npm test
+```
