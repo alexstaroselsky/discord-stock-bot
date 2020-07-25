@@ -1,4 +1,5 @@
 const apiClient = require('../clients/api');
+const { getFormattedCurrency } = require('../lib');
 
 /**
  * Get latest price for a security
@@ -14,10 +15,7 @@ async function getLatestPrice(symbol) {
     params,
   });
 
-  const latestPrice = new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-  }).format(data);
+  const latestPrice = getFormattedCurrency(data);
 
   return latestPrice;
 }
