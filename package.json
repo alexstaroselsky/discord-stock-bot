@@ -4,7 +4,9 @@
   "description": "Discord Bot for displaying stock market information",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "dev": "nodemon index.js",
+    "start": "pm2 start index.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,12 +26,17 @@
   "homepage": "https://github.com/alexstaroselsky/discord-stock-bot#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "dotenv": "^8.2.0"
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "pm2": "^4.4.0"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.7",
     "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
     "prettier-eslint": "^11.0.0"
   }
 }
